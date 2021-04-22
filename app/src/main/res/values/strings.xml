@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">External Storage Example</string>
+    <string name="back">Back</string>
+    <string name="show_private_data">Show Private Data</string>
+    <string name="show_public_data">Show Public Data</string>
+    <string name="add_text">Add Text</string>
+    <string name="click_to_view">Click to View</string>
+    <string name="save_as_private">Save as Private</string>
+    <string name="save_as_public">Save as Public</string>
+</resources>

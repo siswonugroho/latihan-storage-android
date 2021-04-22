@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textToSave"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="360dp"
+        android:hint="@string/add_text"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/btnSaveGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textToSave"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/btnView"
+        tools:layout_editor_absoluteX="21dp">
+
+        <Button
+            android:id="@+id/btnSaveAsPublic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/save_as_public"
+            android:onClick="savePublic"/>
+
+        <Button
+            android:id="@+id/btnSaveAsPrivate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/save_as_private"
+            android:onClick="savePrivate"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSaveGroup"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="37dp"
+        android:layout_weight="1"
+        android:text="@string/click_to_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp"
+        android:onClick="next"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
